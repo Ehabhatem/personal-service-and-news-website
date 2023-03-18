@@ -1,0 +1,1351 @@
+<html>
+
+<head>
+
+    <title>my websit</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            position: fixed;
+            background: brouwn;
+            width: 100%;
+            padding: 10px 0;
+            z-index: 12;
+        }
+
+        .headerbar {
+            background-image: url("https://dm1nggk03ojbs.cloudfront.net/sites/default/files/styles/background_image/public/background/bg12.jpg");
+            background-position: top-center;
+            background-attachment: fixed;
+            background-size: cover;
+            width: 100%;
+            height: 900px;
+        }
+
+        .container-violet {
+            background-color: #4c4588;
+        }
+
+        .front_quotes_list .quote_inline blockquote p {
+            display: inline;
+        }
+
+        .col-lg-offset-2 {
+            margin-right: 16.66666667%;
+            margin-left: 0;
+        }
+
+        .col-lg-8 {
+            width: 66.66666667%;
+        }
+
+        .container {
+            margin-right: auto;
+            margin-left: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        .container {
+            width: 1200px;
+        }
+
+        .front_quotes_list {
+            color: #FFF;
+            line-height: 1.7;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .front_quotes_list .quote_inline blockquote {
+            border: 0 none;
+            font-size: 2.3em;
+            margin: 0;
+            font-weight: 200;
+
+        }
+
+        nav .menu {
+            max-width: 1250px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 30px;
+        }
+
+        .menu .logo a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 35px;
+            font-weight: 600;
+        }
+
+        .menu ul {
+            display: inline-flex;
+        }
+
+        .menu ul li {
+            list-style: none;
+            margin-left: 7px;
+        }
+
+        .menu ul li:first-child {
+            margin-left: 0px;
+        }
+
+        .menu ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .menu ul li a:hover {
+            background: #fff;
+            color: black;
+        }
+
+        .img {
+            background: url('img3.jpg')no-repeat;
+            width: 100%;
+            height: 100vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .img::before {
+            content: '';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        .center {
+            position: absolute;
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            padding: 0 20px;
+            text-align: center;
+        }
+
+        .center .title {
+            color: #fff;
+            font-size: 55px;
+            font-weight: 600;
+        }
+
+        .center .sub_title {
+            color: #fff;
+            font-size: 52px;
+            font-weight: 600;
+        }
+
+        .center .btns {
+            margin-top: 20px;
+        }
+
+        .center .btns button {
+            height: 55px;
+            width: 170px;
+            border-radius: 5px;
+            border: none;
+            margin: 0 10px;
+            border: 2px solid white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 0 10px;
+            cursor: pointer;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+        .center .btns button:first-child {
+            color: #fff;
+            background: none;
+        }
+
+        .btns button:first-child:hover {
+            background: white;
+            color: black;
+        }
+
+        .center .btns button:last-child {
+            background: white;
+            color: black;
+        }
+
+        .container-gray {
+            background-color: #F7F7F7;
+        }
+
+
+        .rtf {
+            font-family: 'HelveticaNeueLTW20-Ligh', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 2em;
+        }
+
+        .hidden-lg {
+            display: none !important;
+        }
+
+        .social_grid .image_card img {
+            border-left: 2px solid #F7F7F7;
+            border-right: 4px solid #F7F7F7;
+        }
+
+        .social_grid .image_card img {
+            border-top: 2px solid #F7F7F7;
+            border-bottom: 2px solid #F7F7F7;
+            border-left: 4px solid #F7F7F7;
+            border-right: 2px solid #F7F7F7;
+        }
+
+        .social_grid .btn-default.child_link {
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            font-size: 18px;
+            padding: 0 6px;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+        }
+
+        .social_grid .image_card .child_title_wrapper {
+            position: absolute;
+            bottom: 5%;
+            left: 50%;
+            width: 90%;
+            margin-left: -45%;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-bottom: 0;
+            font-weight: normal;
+            text-align: center;
+            vertical-align: middle;
+            touch-action: manipulation;
+            cursor: pointer;
+            background-image: none;
+            border: 1px solid transparent;
+            white-space: nowrap;
+            padding: 6px 12px;
+            font-size: 14px;
+            line-height: 1.42857143;
+            border-radius: 0;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        .social_grid.row [class*="col-"],
+        .social_grid .row [class*="col-"] {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        .col-xs-12 {
+            width: 100%;
+        }
+
+        .col-xs-12 {
+            float: right;
+        }
+
+        .social_grid .image_card {
+            position: relative;
+        }
+
+        .white-text {
+            color: #FFFFFF;
+        }
+
+        social_grid .image_card .child_stamp {
+            left: auto;
+            right: 20px;
+        }
+
+        .social_grid .image_card .child_stamp {
+            position: absolute;
+            top: 2px;
+            left: 20px;
+            z-index: 1;
+        }
+
+        .child_stamp .social-logo-btn.btn {
+            padding: 8px px 9px;
+        }
+
+        .fa-fw {
+            width: 1.28571429em em;
+            text-align: center;
+        }
+
+        .fa {
+            display: inline-block;
+            font: normal normal normal 14px/1 FontAwesome;
+            font-size: inherit;
+            text-rendering: auto;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+            transform: translate(0, 0);
+        }
+
+        .social_grid .image_card .child_stamp {
+            left: auto;
+            right: 20px;
+        }
+
+        .section_title a {
+            color: #AAAAAA;
+        }
+
+        a {
+            color: #4c4588;
+            text-decoration: none;
+        }
+
+        .section_title {
+            margin-top: 0;
+            color: #AAAAAA;
+        }
+
+        a {
+            background-color: transparent;
+        }
+
+        .social_grid.row,
+        .social_grid .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        .margin_bottom_50 {
+            margin-bottom: 50px;
+        }
+
+        .margin {
+            margin: 43px
+        }
+
+        .social_grid .btn-default {
+            color: #FFF;
+            background-color: rgba(0, 0, 0, 0.1);
+            border-color: #FFF;
+        }
+
+        .container-violet .container {
+            background-color: transparent;
+        }
+
+        .col-sm-6 {
+            width: 50%;
+        }
+
+        .child_stamp .social-logo-btn.btn {
+            padding: 8px 9px;
+        }
+
+        .btn-instagram {
+            color: #fff;
+            background-color: #b6a88e;
+            border-color: rgba(0, 0, 0, 0.2);
+        }
+
+        .clickable_div {
+            cursor: pointer;
+        }
+
+        .image_card .child_image {
+            position: relative;
+
+        }
+
+        .col-lg-6 {
+            width: 50%;
+        }
+
+        .social_grid .image_card .child_image .white-text-title .title-text {
+            font-size: 16px;
+            font-weight: normal;
+            color: #FFFFFF;
+            text-transform: none;
+        }
+
+        .container-gray .container {
+            background-color: transparent;
+        }
+
+        .padding5000 {
+            padding: 50px;
+        }
+
+        .action_link a {
+            color: #CCCCCC;
+        }
+
+        .container {
+            background-color: #FFFFFF;
+        }
+
+        .white-boxes {
+            color: #222;
+        }
+
+        .white-boxes .item-box {
+            margin-bottom: 30px;
+            overflow: hidden;
+        }
+
+        .col-lg-4 {
+            width: 33.33333333%;
+            padding: 10px;
+        }
+
+        .img-responsive,
+        .thumbnail>img,
+        .thumbnail a>img,
+        .carousel-inner>.item>img,
+        .carousel-inner>.item>a>img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        .white-boxes .item-box .card_info_wrapper {
+            padding: 3px;
+        }
+
+        img {
+            border: 0;
+        }
+
+        .white-boxes .item-box .card_info_wrapper {
+            padding: 15px;
+            background-color: #F7F7F7;
+            border-bottom: 5px #F7F7F7 solid;
+        }
+
+        element.style {
+            height: 172px;
+            margin-top: 0px;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info {
+            position: relative;
+            background-color: #F7F7F7;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .card_info_content {
+            padding: 10px;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .child_title {
+            margin-bottom: 18px;
+            font-size: 1.4em;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .child_title a {
+            color: #111;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .social_media_share_menu {
+            position: absolute;
+            bottom: 1 5px;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .child_date {
+            margin-bottom: 10px;
+            color: #9F9F9F;
+        }
+
+        .visible-hover {
+            display: none;
+        }
+
+        body {
+            font-family: 'HelveticaNeueLTW20-Ligh', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .white-boxes .item-box .card_info_wrapper .card_info .social_media_share_menu {
+            position: absolute;
+            bottom: 15px;
+        }
+
+        .container-violet .image_cards_wrapper_2 .image_card .card_info_wrapper {
+            background-color: #FFFFFF;
+            color: #000000;
+        }
+
+        .image_cards_wrapper_2 .image_card .card_info_wrapper {
+            padding: 8%;
+            background-color: #4c4588;
+            color: #FFFFFF;
+        }
+
+        .image_cards_wrapper_2 .image_card {
+            background-color: #F7F7F7;
+            color: #000000;
+            text-align: center;
+        }
+
+        .thumbnail {
+            margin-bottom: 23px;
+            line-height: 1.7;
+        }
+
+        .image_cards_wrapper_2 .image_card .child_image img {
+            width: 100%;
+            padding: 15% 25%;
+        }
+
+        .thumbnail a>img {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        body {
+            font-family: 'HelveticaNeueLTW20-Ligh', "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        .white-text a {
+            color: #E7E7E7;
+        }
+
+        .image_cards_wrapper_2 .image_card.thumbnail {
+            padding: 0;
+            margin-bottom: 50px;
+        }
+
+        .col-lg-3 {
+            width: 25%;
+            float: right;
+            padding: 5px;
+        }
+
+        .container-violet .image_cards_wrapper_2 .image_card .card_info_wrapper a {
+            color: #222;
+        }
+
+        .image_cards_wrapper_2 .image_card .card_info_wrapper .child_title {
+            font-size: 1.4em;
+        }
+
+        body {
+            direction: rtl;
+            padding: 5px;
+
+        }
+
+        footer .footer_wrapper {
+            border-top: 1px solid #E7E7E7;
+            padding: 25px 0;
+        }
+
+        .col-sm-offset-3 {
+            margin-right: 25%;
+            margin-left: 0;
+        }
+
+        .nav>li>a {
+            position: relative;
+            display: block;
+            padding: 10px 15px;
+        }
+
+        li a.active {
+            color: #000;
+        }
+
+        .nav.nav-centered>li {
+            float: none;
+            display: inline-block;
+            *display: inline;
+            *zoom: 1;
+            vertical-align: top;
+        }
+
+        li.leaf {
+            padding: 0.2em 0 0 0.5em;
+        }
+
+        ul li.leaf {
+            list-style-image: url(/misc/menu-leaf.png);
+            list-style-type: square;
+        }
+
+        .nav>li {
+            position: relative;
+            display: block;
+        }
+
+        .nav.nav-centered {
+            text-align: center;
+        }
+
+        .nav {
+            padding-right: 0;
+            padding-left: initial;
+        }
+
+        ul,
+        ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        .col-lg-offset-0 {
+            margin-right: 0;
+            margin-left: 0;
+        }
+
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+        .popup-content .child_date {
+            color: #9F9F9F;
+            padding-bottom: 1em;
+        }
+
+        .container {
+            width: 1500px;
+        }
+
+        .image_card .child_image {
+            position: relative;
+        }
+
+        .social_grid .image_card .child_image .white-text-title .child_date {
+            font-size: 12px;
+            padding-bottom: 0;
+        }
+
+        .social_grid .image_card .child_image .white-text-title {
+            font-size: 16px;
+            line-height: 20px;
+            font-weight: normal;
+            position: absolute;
+            bottom: 15px;
+            left: 15px;
+            right: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="headerbar">
+
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">Queen Rania</a>
+                </div>
+                <ul>
+                    <li><a href="#">Rania</a></li>
+                    <li><a href="#">Initiatives</a></li>
+                    <li><a href="#">worldwide</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">social media</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="center">
+            <div class="header">
+                <div class="nav">
+                    <img class="img-header" height="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Queen Rania</a>
+            </div>
+            <ul>
+                <li><a href="#">Rania</a></li>
+                <li><a href="#">Initiatives</a></li>
+                <li><a href="#">worldwide</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">social media</a></li>
+            </ul>
+        </div>
+
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Queen Rania</a>
+            </div>
+            <ul>
+                <li><a href="#">Rania</a></li>
+                <li><a href="#">Initiatives</a></li>
+                <li><a href="#">worldwide</a></li>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">social media</a></li>
+            </ul>
+        </div>
+    </nav>
+    </div>
+    <div class="headerbar">
+
+        <nav>
+            <div class="menu">
+                <div class="logo">
+                    <a href="#">Queen Rania</a>
+                </div>
+                <ul>
+                    <li><a href="#">Rania</a></li>
+                    <li><a href="#">Initiatives</a></li>
+                    <li><a href="#">worldwide</a></li>
+                    <li><a href="#">Media Center</a></li>
+                    <li><a href="#">social media</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="img"></div>
+        <div class="center">
+            <div class="header">
+                <div class="nav">
+                    <img class="img-header" height="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-violet">
+        <div class="container">
+            <div class="">
+                <div class=" img1 img2 ">
+                    <div class="padding5000">
+                        <div class="front_quotes_list text-center ulight_text">
+                            <div class="ulight_text">
+                                <div class="quote_inline">
+                                    <blockquote>
+                                        <p class="rtecenter">
+                                            Without education, you will wake up every morning with limited capabilities
+                                            <br>
+                                            Unable to get over what it was yesterday
+                                        </p>
+                                    </blockquote>
+
+                                </div>
+                            </div>
+                            <div class="front_share_button text-center">
+                                <a class="btn btn-link fs-share-link" data-original-title="">شارك</a>
+                                <div class="fs-hidden-share-links hidden">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="">
+            <div class=" img1 img2 ">
+                <div class="padding5000">
+                    <div class="front_quotes_list text-center ulight_text">
+                        <div class="ulight_text">
+                            <div class="quote_inline">
+                                <blockquote>
+                                    <p class="rtecenter">
+                                        Without education, you will wake up every morning with limited capabilities <br>
+                                        Unable to get over what it was yesterday </p>
+                                </blockquote>
+
+                            </div>
+                        </div>
+                        <div class="front_share_button text-center">
+                            <a class="btn btn-link fs-share-link" data-original-title="">شارك</a>
+                            <div class="fs-hidden-share-links hidden">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-gray">
+        <div class="container">
+            <div class="padding5000">
+                <h2 class="text-center margin_bottom_50 section_title">
+                    <a href="/ar/social-media">وسائل الاعلام الاجتماعية </a>
+                </h2>
+                <div class="">
+                    <div class="row social_grid">
+                        <div class="col-xs-12 col-lg-6 level-1">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="image_card clickable_div white-bg">
+                                                <div class="child_stamp">
+                                                    <a href="/ar/social-media/flickr/visit-ajloun-14"
+                                                        class="social-logo-btn btn btn-primary btn-flickr">
+                                                        <i class="fa fa-fw fa-flickr"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="child_image edit_dot_wrapper">
+                                                    <a href="/ar/social-media/flickr" class="clickable_div_link"
+                                                        target="_self">
+                                                        <img src="https://d1ohiyg9nhfiyu.cloudfront.net/sites/default/files/styles/aspect_l/public/social/flickr/52081792332_111431d9ba_b.jpg"
+                                                            title="" alt="" class="" width="100%">
+                                                    </a>
+                                                    <a tabindex="0" role="button"
+                                                        class="child_link btn btn-sm btn-default social-caption-btn">
+                                                        <i class="fa fa-ellipsis-h">
+                                                        </i>
+                                                    </a>
+                                                    <div class="hidden child_body">
+                                                        <div class="popup-content">
+
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <div class="">
+                                        <div class="image_card clickable_div white-bg">
+                                            <div class="child_stamp">
+                                                <a href="/ar/social-media/youtube/foreign-policy-virtual-climate-summit"
+                                                    class="social-logo-btn btn btn-primary btn-youtube">
+                                                    <i class="fa fa-fw fa-youtube"></i>
+                                                </a>
+                                            </div>
+                                            <div class="child_image edit_dot_wrapper">
+                                                <a href="/ar/social-media/youtube" class="clickable_div_link"
+                                                    target="_self">
+                                                    <img src="https://d1ohiyg9nhfiyu.cloudfront.net/sites/default/files/styles/aspect_l/public/social/343.jpg"
+                                                        title="" alt="" class="" width="100%">
+                                                </a>
+                                                <a tabindex="0" role="button"
+                                                    class="child_link btn btn-sm btn-default social-caption-btn"
+                                                    href="/ar/social-media/youtube" target="_self"
+                                                    data-original-title="" title="">
+                                                    <i class="fa fa-ellipsis-h"></i>
+                                                </a>
+                                                <div class="hidden child_body">
+                                                    <div class="popup-content">
+                                                        <div class="child_date light_text">
+                                                            <span class="date_wrapper" isrender="true"></span>
+                                                        </div>
+
+
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-lg-6 level-1">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="">
+                                        <div class="">
+                                            <div class="image_card clickable_div white-text">
+                                                <div class="child_stamp">
+                                                    <a href="/ar/social-media/facebook/شكراً-من-القلب-لكل-من-قدم-لنا-التعزية-في-وفاة-والدي-الدكتور-فيصل-الياسين-ترك-ا"
+                                                        class="social-logo-btn btn btn-primary btn-facebook">
+                                                        <i class="fa fa-fw fa-facebook"></i>
+                                                    </a>
+                                                </div>
+                                                <div class="child_image edit_dot_wrapper">
+                                                    <a href="/ar/social-media/facebook" class="clickable_div_link"
+                                                        target="_self">
+                                                        <img src="https://d3ekyrd5f0qkjv.cloudfront.net/sites/default/files/styles/aspect_l/public/default/facebook.png"
+                                                            title="" alt="" class="" width="100%">
+                                                    </a>
+                                                    <div class="white-text-title">
+                                                        <div class="child_date light_text">
+                                                            <span class="date_wrapper">30 أيار 2022</span>
+                                                        </div>
+                                                        <div class="title-text">
+                                                            "شكراً من القلب لكل من قدم لنا التعزية في وفاة والدي الدكتور
+                                                            فيصل الياسين.. ترك الفقيد حزناً كبيراً في نفوسنا.. لكن وجدت
+                                                            أنا وعائلتي الكثير من السلوان في رسائلكم ودعواتكم. ممتنة
+                                                            لعائلتنا الكبيرة وأصدقائنا داخل الأردن وخارجه ولا أراكم الله
+                                                            مكروهاً في عزيز رحمك الله يا غالي.."
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 padding_right_05 level-2">
+                                    <div class="">
+                                        <div class="image_card clickable_div white-bg">
+                                            <div class="child_stamp">
+                                                <a href="/ar/social-media/instagram/instagram-17945921236963890644165429"
+                                                    class="social-logo-btn btn btn-primary btn-instagram">
+                                                    <i class="fa fa-fw fa-instagram"></i>
+                                                </a>
+                                            </div>
+                                            <div class="child_image edit_dot_wrapper">
+                                                <a href="/ar/social-media/instagram" class="clickable_div_link"
+                                                    target="_self">
+                                                    <img src="https://d1ohiyg9nhfiyu.cloudfront.net/sites/default/files/styles/aspect_s/public/social/instagram/284393937_579014620317290_872744190664486471_n.jpg"
+                                                        title="" alt="" class="" width="100%">
+                                                </a>
+                                                <a tabindex="0" role="button"
+                                                    class="child_link btn btn-sm btn-default social-caption-btn"
+                                                    href="/ar/social-media/instagram" target="_self"
+                                                    data-original-title="" title="">
+                                                    <i class="fa fa-ellipsis-h"></i>
+                                                </a>
+                                                <div class="hidden child_body">
+                                                    <div class="popup-content">
+                                                        <div class="child_date light_text">
+                                                            <span class="date_wrapper">27 أيار 2022</span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 level-2">
+                                    <div class="">
+                                        <div class="image_card clickable_div white-text">
+                                            <div class="child_stamp">
+                                                <a href="/ar/social-media/twitter/نشاطر-الأهل-في-دولة-الإمارات-الشقيقة-أحز"
+                                                    class="social-logo-btn btn btn-primary btn-twitter">
+                                                    <i class="fa fa-fw fa-twitter"></i>
+                                                </a>
+                                            </div>
+                                            <div class="child_image edit_dot_wrapper">
+                                                <a href="/ar/social-media/twitter" class="clickable_div_link"
+                                                    target="_self">
+                                                    <img src="https://d3ekyrd5f0qkjv.cloudfront.net/sites/default/files/styles/aspect_s/public/default/twitter.png"
+                                                        title="" alt="" class="" width="100%">
+                                                </a>
+                                                <div class="white-text-title">
+                                                    <div class="child_date light_text">
+                                                        <span class="date_wrapper">13 أيار 2022</span>
+                                                    </div>
+                                                    <div class="title-text">
+                                                        "نشاطر الأهل في دولة الإمارات الشقيقة أحزانهم بوفاة المغفور له
+                                                        بإذن الله تعالى فقيد الأمة سمو الشيخ خليفة بن زايد آل نهيان صاحب
+                                                        الأيادي البيضاء والمواقف المشرفة، رحمه الله تعالى وأسكنه فسيح
+                                                        جناته "
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center margin_top_50 action_link">
+                    <a href="/ar/social-media" class="btn btn-link">مشاهدة الكل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="">
+        <div class="container">
+            <div class="padding5000">
+                <h2 class="text-center margin_bottom_50 section_title">
+                    <a href="/ar/media-center">المركز الإعلامي</a>
+                </h2>
+                <div class="row white-boxes articles_list">
+                    <div
+                        class="col-xs-12 col-sm-6 col-lg-4 item-box item-box-fixed item-box-sharable social_hover_state">
+                        <div class="child_image">
+                            <a href="/ar/media/press-releases/queen-rania-receives-condolences-sheikha-moza-passing-her-majestys-father"
+                                class="" target="_self">
+                                <img src="https://d4h6te9wk6a93.cloudfront.net/sites/default/files/styles/card_image/public/default/all.png"
+                                    title="" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="card_info_wrapper">
+                            <div class="card_info" fs-org-height="138" fs_height="172" fs-row="1"
+                                style="height: 172px; margin-top: 0px;">
+                                <div class="card_info_content">
+                                    <div class="child_title">
+                                        <a href="/ar/media/press-releases/queen-rania-receives-condolences-sheikha-moza-passing-her-majestys-father"
+                                            title="الملكة رانيا تتقبل العزاء من الشيخة موزا في عمان بوفاة والد جلالتها"
+                                            class="clickable_div_link" target="_self"> الملكة رانيا تتقبل العزاء من
+                                            الشيخة موزا في عمان بوفاة والد جلالتها... </a>
+                                    </div>
+                                    <div class="child_date light_text">
+                                        <span class="date_wrapper">29 أيار 2022</span>
+                                    </div>
+
+                                    <div class="social_media_share_menu visible-hover">
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=facebook&amp;lang=ar&amp;filter1=209272"
+                                            target="_blank" class="btn btn-social-icon btn-facebook btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="facebook"
+                                            fs-share-target-id="209272">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=twitter&amp;lang=ar&amp;filter1=209272"
+                                            target="_blank" class="btn btn-social-icon btn-twitter btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="twitter"
+                                            fs-share-target-id="209272">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=pinterest&amp;lang=ar&amp;filter1=209272"
+                                            target="_blank"
+                                            class="btn btn-social-icon btn-pinterest btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="pinterest"
+                                            fs-share-target-id="209272">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=tumblr&amp;lang=ar&amp;filter1=209272"
+                                            target="_blank" class="btn btn-social-icon btn-tumblr btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="tumblr"
+                                            fs-share-target-id="209272">
+                                            <i class="fa fa-tumblr"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            class="btn btn-social-icon btn-whatsapp btn-sm hidden visible-xs-inline-block fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="whatsapp"
+                                            fs-share-target-id="209272">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xs-12 col-sm-6 col-lg-4 item-box item-box-fixed item-box-sharable">
+                        <div class="child_image">
+                            <a href="/ar/media/press-releases/queen-rania-visits-jordan-river-designs-showroom-update-jrf’s-social"
+                                class="" target="_self">
+                                <img src="https://dm1nggk03ojbs.cloudfront.net/sites/default/files/styles/card_image/public/field/image/FORA2107.jpg"
+                                    title="" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="card_info_wrapper">
+                            <div class="card_info" fs-org-height="172" fs_height="172" fs-row="1"
+                                style="height: 172px; margin-top: 0px;">
+                                <div class="card_info_content">
+                                    <div class="child_title">
+                                        <a href="/ar/media/press-releases/queen-rania-visits-jordan-river-designs-showroom-update-jrf’s-social"
+                                            title="الملكة رانيا تطلع على إنجازات مشاريع مؤسسة نهر الأردن لتمكين الأفراد والمجتمعات"
+                                            class="clickable_div_link" target="_self">
+                                            " الملكة رانيا تطلع على إنجازات مشاريع مؤسسة نهر الأردن لتمكين الأفراد
+                                            والمجتمعات... "
+                                        </a>
+                                    </div>
+                                    <div class="child_date light_text">
+                                        <span class="date_wrapper">24 أيار 2022</span>
+                                    </div>
+
+                                    <div class="social_media_share_menu visible-hover">
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=facebook&amp;lang=ar&amp;filter1=209256"
+                                            target="_blank" class="btn btn-social-icon btn-facebook btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="facebook"
+                                            fs-share-target-id="209256">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=twitter&amp;lang=ar&amp;filter1=209256"
+                                            target="_blank" class="btn btn-social-icon btn-twitter btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="twitter"
+                                            fs-share-target-id="209256">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=pinterest&amp;lang=ar&amp;filter1=209256"
+                                            target="_blank"
+                                            class="btn btn-social-icon btn-pinterest btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="pinterest"
+                                            fs-share-target-id="209256">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=tumblr&amp;lang=ar&amp;filter1=209256"
+                                            target="_blank" class="btn btn-social-icon btn-tumblr btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="tumblr"
+                                            fs-share-target-id="209256">
+                                            <i class="fa fa-tumblr"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            class="btn btn-social-icon btn-whatsapp btn-sm hidden visible-xs-inline-block fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="whatsapp"
+                                            fs-share-target-id="209256">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="col-xs-12 col-sm-6 col-lg-4 item-box item-box-fixed item-box-sharable hidden-sm hidden-md social_hover_state">
+                        <div class="child_image">
+                            <a href="/ar/media/queen-rania-visits-ajloun-ladies-charity-association" class=""
+                                target="_self">
+                                <img src="https://d4h6te9wk6a93.cloudfront.net/sites/default/files/styles/card_image/public/field/image/a.jpeg"
+                                    title="" alt="" class="img-responsive">
+                            </a>
+                        </div>
+                        <div class="card_info_wrapper">
+                            <div class="card_info" fs-org-height="138" fs_height="172" fs-row="1"
+                                style="height: 172px; margin-top: 0px;">
+                                <div class="card_info_content">
+                                    <div class="child_title">
+                                        <a href="/ar/media/queen-rania-visits-ajloun-ladies-charity-association"
+                                            title="الملكة رانيا تطلع على برامج جمعية سيدات عجلون الخيرية "
+                                            class="clickable_div_link" target="_self"> الملكة رانيا تطلع على برامج جمعية
+                                            سيدات عجلون الخيرية ... </a>
+                                    </div>
+                                    <div class="child_date light_text">
+                                        <span class="date_wrapper">18 أيار 2022</span>
+                                    </div>
+
+                                    <div class="social_media_share_menu visible-hover">
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=facebook&amp;lang=ar&amp;filter1=209241"
+                                            target="_blank" class="btn btn-social-icon btn-facebook btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="facebook"
+                                            fs-share-target-id="209241">
+                                            <i class="fa fa-facebook"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=twitter&amp;lang=ar&amp;filter1=209241"
+                                            target="_blank" class="btn btn-social-icon btn-twitter btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="twitter"
+                                            fs-share-target-id="209241">
+                                            <i class="fa fa-twitter"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=pinterest&amp;lang=ar&amp;filter1=209241"
+                                            target="_blank"
+                                            class="btn btn-social-icon btn-pinterest btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="pinterest"
+                                            fs-share-target-id="209241">
+                                            <i class="fa fa-pinterest"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            href="/share.php?module=social&amp;method=share&amp;filter=tumblr&amp;lang=ar&amp;filter1=209241"
+                                            target="_blank" class="btn btn-social-icon btn-tumblr btn-sm fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="tumblr"
+                                            fs-share-target-id="209241">
+                                            <i class="fa fa-tumblr"></i>
+                                        </a>
+                                        <a rel="nofollow"
+                                            class="btn btn-social-icon btn-whatsapp btn-sm hidden visible-xs-inline-block fs-share-btn"
+                                            fs-share-method="share" fs-share-channel="whatsapp"
+                                            fs-share-target-id="209241">
+                                            <i class="fa fa-whatsapp"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center margin_top_25">
+                    <a href="/ar/media-center" class="btn btn-link">مشاهدة الكل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-violet white-text">
+        <div class="container">
+            <div class="padding5000">
+                <h2 class="text-center margin_top_00 margin_bottom_50">
+                    <a href="/ar/initiatives">المبادرات</a>
+                </h2>
+                <div id="entries_list_default" class="image_cards_wrapper_2 ">
+                    <div class="row projects_list">
+                        <div
+                            class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-sm-offset-1">
+                            <div class="image_card thumbnail">
+                                <div class="child_image">
+                                    <a href="/ar/initiatives/queen-rania-foundation-education-and-development" class=""
+                                        target="_self">
+                                        <img src="https://d4h6te9wk6a93.cloudfront.net/sites/default/files/styles/logo/public/project_icons/Untitled-9.png"
+                                            title="" alt="" class="">
+                                    </a>
+                                </div>
+                                <div class="card_info_wrapper">
+                                    <div class="card_info" fs_height="87" style="height: 87px;">
+                                        <div class="child_title margin_bottom_05">
+                                            <a href="/ar/initiatives/queen-rania-foundation-education-and-development"
+                                                class="clickable_div_link" target="_self">مؤسسة الملكة رانيا للتعليم
+                                                والتنمية</a>
+                                        </div>
+                                    </div>
+                                    <a class="child_link light_text" href="https://www.qrf.org/ar" target="_blank">زيارة
+                                        الموقع</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-sm-offset-0">
+                            <div class="image_card thumbnail">
+                                <div class="child_image">
+                                    <a href="/ar/initiatives/jordan-river-foundation" class="" target="_self">
+                                        <img src="https://d3ekyrd5f0qkjv.cloudfront.net/sites/default/files/styles/logo/public/jordan_river_foundation_logo.png"
+                                            title="" alt="" class="">
+                                    </a>
+                                </div>
+                                <div class="card_info_wrapper">
+                                    <div class="card_info" fs_height="87" style="height: 87px;">
+                                        <div class="child_title margin_bottom_05">
+                                            <a href="/ar/initiatives/jordan-river-foundation" class="clickable_div_link"
+                                                target="_self">مؤسسة نهر الأردن</a>
+                                        </div>
+                                    </div>
+                                    <a class="child_link light_text" href="http://www.jordanriver.jo/?q=ar"
+                                        target="_blank">زيارة الموقع</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-sm-offset-1">
+                            <div class="image_card thumbnail">
+                                <div class="child_image">
+                                    <a href="/ar/initiatives/madrasati" class="" target="_self">
+                                        <img src="https://d3ekyrd5f0qkjv.cloudfront.net/sites/default/files/styles/logo/public/project_icons/logo.png"
+                                            title="" alt="" class="">
+                                    </a>
+                                </div>
+                                <div class="card_info_wrapper">
+                                    <div class="card_info" fs_height="87" style="height: 87px;">
+                                        <div class="child_title margin_bottom_05">
+                                            <a href="/ar/initiatives/madrasati" class="clickable_div_link"
+                                                target="_self">مدرسني</a>
+                                        </div>
+                                    </div>
+                                    <a class="child_link light_text" href="http://www.madrasati.jo/"
+                                        target="_blank">زياؤة الموقع</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div
+                            class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-0 col-lg-3 col-lg-offset-0 col-sm-offset-0">
+                            <div class="image_card thumbnail">
+                                <div class="child_image">
+                                    <a href="/ar/initiatives/queen-rania-teacher-academy" class="" target="_self">
+                                        <img src="https://d1ohiyg9nhfiyu.cloudfront.net/sites/default/files/styles/logo/public/qrta_logo.png"
+                                            title="" alt="" class="">
+                                    </a>
+                                </div>
+                                <div class="card_info_wrapper">
+                                    <div class="card_info" fs_height="87" style="height: 87px;">
+                                        <div class="child_title margin_bottom_05">
+                                            <a href="/ar/initiatives/queen-rania-teacher-academy"
+                                                class="clickable_div_link" target="_self">أكاديمية الملكة رانيا لتدريب
+                                                المعلمين</a>
+                                        </div>
+                                    </div>
+                                    <a class="child_link light_text" href="http://www.qrta.edu.jo/"
+                                        target="_blank">زيارة الموقع</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center margin_top_25">
+                    <a href="/ar/initiatives" class="btn btn-link">مشاهدة الكل</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="https://foresite.jo" title="Website Development by Foresite Web Design"></a>
+    <footer>
+        <div class="footer_wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3">
+                        <nav class="navbar-footer-menu">
+                            <ul class="nav nav-centered">
+                                <li class="first leaf">
+                                    <a href="/ar" title="" class="active">الرئيسية</a>
+                                </li>
+                                <li class="leaf">
+                                    <a href="/ar/legal-notice-0" title="" class="menu_nid_204480">اشعار قانوني</a>
+                                </li>
+                                <li class="leaf">
+                                    <a href="http://www.kingabdullah.jo/" title="" target="_blank">الملك عبدالله
+                                        الثاني</a>
+                                </li>
+                                <li class="last leaf">
+                                    <a href="/ar/request-interview" title="" class="menu_nid_204489">طلب مقابلة</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="site_copyright padding2500 text-center">
+                    <p>حقوق الطبع والنشر 2023 ©. جميع الحقوق محفوظة</p>
+                </div>
+            </div>
+        </div>
+
+
+    </footer>
+
+
+
+
+
+</body>
+
+</html>
